@@ -17,15 +17,18 @@ function displayObjectsImagesAndTexts() {
     binRight.display();
     binBottom.display();
 
+    fill("lightgreen");
+    textSize(30);
+    if (!ballHasBeenShot) {
+        textSize(23);
+        text("Control your paper ball with your arrow keys, when you think you are ready to shoot, click on the 'Space bar' or the 'Up arrow key' to have a nice big shot!", 20, 120);
+    }
+
     if (finalTextShouldDisplay()) {
-        fill("lightgreen");
-        textSize(30);
         text("Yoohoo!! You put it. You are really an Aim Master! Refresh to Aim again.", 150, 120);
         gameDone = true;
     }
     if (lostTextShouldDisplay()) {
-        fill("lightgreen");
-        textSize(30);
         text("Ohh no :(. You couldn't get the right aim. Please refresh to Aim again.", 150, 120);
         gameDone = true;
     }
@@ -69,7 +72,7 @@ function moveObjects() {
 
         if (keyDown(UP_ARROW)) {
             ballHasBeenShot = true;
-            Matter.Body.applyForce(ball.body, ball.body.position, { x: 84, y: -102 });
+            Matter.Body.applyForce(ball.body, ball.body.position, { x: 78, y: -92 });
         }
     }
 }
