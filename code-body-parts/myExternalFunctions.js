@@ -70,7 +70,7 @@ function moveObjects() {
             ball_x_speed_decreaser = 0.2;
         }
 
-        if (keyDown(UP_ARROW)) {
+        if (keyDown(UP_ARROW) || keyDown("space")) {
             ballHasBeenShot = true;
             Matter.Body.applyForce(ball.body, ball.body.position, { x: 78, y: -92 });
         }
