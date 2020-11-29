@@ -1,15 +1,15 @@
 function displayObjectsImagesAndTexts() {
-    push();
-    stroke("white");
-    line(binLeft.body.position.x + (binLeft.width / 2), binLeft.body.position.y,
-        binBottom.body.position.x, binBottom.body.position.y - (binBottom.width / 2));
+    // push();
+    // stroke("white");
+    // line(binLeft.body.position.x + (binLeft.width / 2), binLeft.body.position.y,
+    //     binBottom.body.position.x, binBottom.body.position.y - (binBottom.width / 2));
 
-    line(binRight.body.position.x - (binRight.width / 2), binRight.body.position.y,
-        binBottom.body.position.x, binBottom.body.position.y - (binBottom.width / 2));
+    // line(binRight.body.position.x - (binRight.width / 2), binRight.body.position.y,
+    //     binBottom.body.position.x, binBottom.body.position.y - (binBottom.width / 2));
 
-    line(binLeft.body.position.x + (binLeft.width / 2), binLeft.body.position.y,
-        binRight.body.position.x - (binRight.width / 2), binRight.body.position.y);
-    pop();
+    // line(binLeft.body.position.x + (binLeft.width / 2), binLeft.body.position.y,
+    //     binRight.body.position.x - (binRight.width / 2), binRight.body.position.y);
+    // pop();
 
     ball.display();
     ground.display();
